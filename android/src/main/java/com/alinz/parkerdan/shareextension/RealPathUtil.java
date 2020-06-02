@@ -87,10 +87,6 @@ public class RealPathUtil {
 
  public static String getPathFromSavingTempFile(Context context, final Uri uri) {
      File tmpFile;
-     String jsonString = new JSONObject()
-           
-                  .toString();
-
      try {
         String fileName = uri.getLastPathSegment();
         tmpFile = File.createTempFile("tmp", fileName, context.getCacheDir());
