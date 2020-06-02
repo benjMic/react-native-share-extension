@@ -72,8 +72,6 @@ public class ShareModule extends ReactContextBaseJavaModule {
                 || "application/vnd.ms-excel.template.macroenabled.12".equals(type)
                 || "application/vnd.openxmlformats-officedocument.spreadsheetml.template".equals(type)
                 || "application/vnd.ms-excel.template.macroEnabled.12".equals(type)
-                || "application/CDFV2-corrupt".equals(type)
-                || "application/CDFV2-unknown".equals(type)
                 || "application/xml".equals(type)
                 || "text/xml".equals(type)
                 || "application/vnd.ms-excel.sheet.binary.macroEnabled.12".equals(type)
@@ -90,14 +88,11 @@ public class ShareModule extends ReactContextBaseJavaModule {
                 || "text/plain".equals(type)
                 || "application/vnd.ms-outlook".equals(type)
                 || "application/octet-stream".equals(type)
-                || "zz-application/zz-winassoc-dat".equals(type)
                 || "application/vnd.ms-office".equals(type)
                 || "application/rtf".equals(type)
                 || "text/html".equals(type)
                 || "text/rtf".equals(type)
                 || "text/csv".equals(type)
-                || "image/vnd.fpx".equals(type)
-                || "application/vnd.ms-excel.sheet.macroEnabled".equals(type)
          ) ) {
           Uri uri = (Uri) intent.getParcelableExtra(Intent.EXTRA_STREAM);
          value = "file://" + RealPathUtil.getRealPathFromURI(currentActivity, uri);
